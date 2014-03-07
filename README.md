@@ -25,6 +25,8 @@ New Menu Icon, and GUI changed.
 BETA 1.0.1 : http://builds.cloudpebble.net/6/3/634de034-befa-4e16-9593-4e4ddb8fafd4/watchface.pbw
 -All Images are now Just Text saying Gen 1, or Gen 2. added pokemon up to 175.
 
+BETA 1.0.2 : http://builds.cloudpebble.net/e/5/e5b267ac-ed8e-4820-bbed-52d47be194ab/watchface.pbw
+-Updated All Pokemon the correct Types! (Updated Kanto Pokemon with fairy type) added pokemon up to 200.
 
 ==========
 Contact
