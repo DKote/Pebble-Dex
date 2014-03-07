@@ -1,14 +1,14 @@
 /*
 	This File Contains all the Pokemon Information 
 	Internatinal Pokedex
-  WIP
+  WIP BETA build 1.0
   Includes MissNo
-	001      ...    161
-	Bulbasaur		Feraligatr
+	001      ...    168
+	Bulbasaur		Spinarak
 
 */
 
-#define NUM_POKEMON 161
+#define NUM_POKEMON 168
 
 static char * poke_names[] = {
 " 001      \n\nBulbasaur\n\nGrass\nPoison",
@@ -168,10 +168,17 @@ static char * poke_names[] = {
 " 154      \n\nMeganium\n\nGrass\n",
 " 155      \n\nCyndaquil\n\nFire\n",
 " 156      \n\nQuilava\n\nFire\n",
-" 157      \n\nTyphlosion\nFire\n",
-" 158      \n\nTotodile\nWater\n",
-" 159      \n\nCroconaw\nWater\n",
-" 160      \n\nFeraligatr\nWater\n",
+" 157      \n\nTyphlosion\n\nFire\n",
+" 158      \n\nTotodile\n\nWater\n",
+" 159      \n\nCroconaw\n\nWater\n",
+" 160      \n\nFeraligatr\n\nWater\n",
+" 161      \n\nSentret\n\nNormal\n",
+" 162      \n\nFurret\n\nNormal\n",
+" 163      \n\nHoothoot\n\nNormal\nFlying",
+" 164      \n\nNoctowl\n\nNormal\nFlying",
+" 165      \n\nLedyba\n\nBug\nFlying",
+" 166      \n\nLedian\n\nBug\nFlying",
+" 167      \n\nSpinarak\n\nBug\nPoison",
 NULL};
 
 static char * poke_info[] = {
@@ -336,6 +343,13 @@ static char * poke_info[] = {
 " 158      \n\nTotodile\n\n0.61  m\n9.5 kg",
 " 159      \n\nCroconaw\n\n1.09  m\n25.0 kg",
 " 160      \n\nFeraligatr\n\n2.31  m\n88.8 kg",
+" 161      \n\nSentret\n\n0.79  m\n6.0 kg",
+" 162      \n\nFurret\n\n1.80  m\n3.25 kg",
+" 163      \n\nHoothoot\n\n0.71  m\n21.2 kg",
+" 164      \n\nNoctowl\n\n1.60  m\n40.8 kg",
+" 165      \n\nLedyba\n\n0.99  m\n10.8 kg",
+" 166      \n\nLedian\n\n1.40  m\n35.6 kg",
+" 167      \n\nSpinarak\n\n0.51  m\n8.5 kg",
 NULL};
 
 
@@ -494,6 +508,14 @@ RESOURCE_ID_IMAGE_poke150,
 RESOURCE_ID_IMAGE_poke151,
 RESOURCE_ID_IMAGE_pokemissno,
 RESOURCE_ID_IMAGE_poke152,
+RESOURCE_ID_IMAGE_UNKNOW,
+RESOURCE_ID_IMAGE_UNKNOW,
+RESOURCE_ID_IMAGE_UNKNOW,
+RESOURCE_ID_IMAGE_UNKNOW,
+RESOURCE_ID_IMAGE_UNKNOW,
+RESOURCE_ID_IMAGE_UNKNOW,
+RESOURCE_ID_IMAGE_UNKNOW,
+RESOURCE_ID_IMAGE_UNKNOW,
 RESOURCE_ID_IMAGE_UNKNOW,
 RESOURCE_ID_IMAGE_UNKNOW,
 RESOURCE_ID_IMAGE_UNKNOW,
