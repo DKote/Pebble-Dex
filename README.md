@@ -18,9 +18,12 @@ Head Developer is Dakota Kryzanowski
 ==========
 BETA DOWNLOAD's
 
-BETA 1.0: http://builds.cloudpebble.net/c/4/c447b2c2-77b1-4bdb-8bee-6c182a3c3fe3/watchface.pbw
+BETA 1.0.0: http://builds.cloudpebble.net/c/4/c447b2c2-77b1-4bdb-8bee-6c182a3c3fe3/watchface.pbw
 -Includes All Kanto Pokèmon (including MissNo) and First 17 pokèmon of the 2nd Generation.
 New Menu Icon, and GUI changed.
+
+BETA 1.0.1 : http://builds.cloudpebble.net/6/3/634de034-befa-4e16-9593-4e4ddb8fafd4/watchface.pbw
+-All Images are now Just Text saying Gen 1, or Gen 2. added pokemon up to 175.
 
 
 ==========
