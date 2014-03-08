@@ -28,6 +28,8 @@ BETA 1.0.1 : http://builds.cloudpebble.net/6/3/634de034-befa-4e16-9593-4e4ddb8fa
 BETA 1.0.2 : http://builds.cloudpebble.net/e/5/e5b267ac-ed8e-4820-bbed-52d47be194ab/watchface.pbw
 -Updated All Pokemon the correct Types! (Updated Kanto Pokemon with fairy type) added pokemon up to 200.
 
+BETA 2.0.0 : http://builds.cloudpebble.net/0/c/0c228cf7-be81-420d-93e4-82513f2860bd/watchface.pbw
+-All Pokemon in Generation 1, and Generation 2. Added Starts By Legendary Pokemon.
 ==========
 Contact
 
