@@ -12,9 +12,9 @@ The Programing is Easy, but i am not as good at Spriting. I am looking for some 
 ==========
 Developers
 
-Original developer is shutdown27 (All first Generation Pokèmon Sprites Done By Him)
-Original Porter to SDK 2.0 is Buchenherz 
-Head Developer is Dakota Kryzanowski
+Original developer is shutdown27
+Original Code Forked By Buchenherz 
+Head Developer for Pebble-Dex is Dakota
 ==========
 BETA DOWNLOAD's
 
