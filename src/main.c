@@ -50,7 +50,7 @@ int random(int max) // returns 1 ... max
 void up_click_handler(ClickRecognizerRef recognizer, void *context) 
 {
 	if (click_number_of_clicks_counted( recognizer ) >= 3)
-		currentID = currentID -10;
+		currentID = currentID -15;
 	else if (click_number_of_clicks_counted( recognizer ) == 1)
 		currentID = currentID -1;
 	
@@ -60,7 +60,7 @@ void up_click_handler(ClickRecognizerRef recognizer, void *context)
 void down_click_handler(ClickRecognizerRef recognizer, void *context) 
 {
 	if (click_number_of_clicks_counted( recognizer ) >= 3)
-		currentID = currentID +10;
+		currentID = currentID +15;
 	else if (click_number_of_clicks_counted( recognizer ) == 1)
 		currentID = currentID +1;
 

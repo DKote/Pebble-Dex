@@ -1,15 +1,19 @@
 /*
 	This File Contains all the Pokemon Information 
-	Internatinal Pokedex
-  WIP BETA build 1.0
+	Internatinal Pokedex WIP (Generation 1 - Generarion 2)
+  All Legendary Pokemon have a ✯ befor there name!
+  WIP BETA build 2.0.0 R1
   Includes MissNo
-	001      ...    168
-	Bulbasaur		Spinarak
+	001      ...    251
+	Bulbasaur		Celebi
 
 */
 
-#define NUM_POKEMON 168
-
+//Pokemon Number (note: Latest Pokemon Number +1)
+#define NUM_POKEMON 252
+  //Pokemon Type
+  // \n\n<Name>\n\n<Type1>\n[Type2]
+  //Include \n at the end even if there is no second type!
 static char * poke_names[] = {
 " 001      \n\nBulbasaur\n\nGrass\nPoison",
 " 002      \n\nIvysaur\n\nGrass\nPoison",
@@ -45,12 +49,12 @@ static char * poke_names[] = {
 " 032      \n\nNidoran m\n\nPoison\n",
 " 033      \n\nNidorino\n\nPoison\n",
 " 034      \n\nNidoking\n\nPoison\nGround",
-" 035      \n\nClefairy\n\nNormal\n",
-" 036      \n\nClefable\n\nNormal\n",
+" 035      \n\nClefairy\n\nFairy\n",
+" 036      \n\nClefable\n\nFairy\n",
 " 037      \n\nVulpix\n\nFire\n",
 " 038      \n\nNinetales\n\nFire\n",
-" 039      \n\nJigglypuff\n\nNormal\n",
-" 040      \n\nWigglytuff\n\nNormal\n",
+" 039      \n\nJigglypuff\n\nFairy\n",
+" 040      \n\nWigglytuff\n\nFairy\n",
 " 041      \n\nZubat\n\nPoison\nFlying",
 " 042      \n\nGolbat\n\nPoison\nFlying",
 " 043      \n\nOddish\n\nGrass\nPoison",
@@ -132,7 +136,7 @@ static char * poke_names[] = {
 " 119      \n\nSeaking\n\nWater\n",
 " 120      \n\nStaryu\n\nWater\n",
 " 121      \n\nStarmie\n\nWater\nPsychic",
-" 122      \n\nMr. Mime\n\nPsychic\n",
+" 122      \n\nMr. Mime\n\nPsychic\nFairy",
 " 123      \n\nScyther\n\nBug\nFlying",
 " 124      \n\nJynx\n\nIce\nPsychic",
 " 125      \n\nElectabuzz\n\nElectric\n",
@@ -154,14 +158,14 @@ static char * poke_names[] = {
 " 141      \n\nKabutops\n\nRock\nWater",
 " 142      \n\nAerodactyl\n\nRock\nFlying",
 " 143      \n\nSnorlax\n\nNormal\n",
-" 144      \n\nArticuno\n\nIce\nFlying",
-" 145      \n\nZapdos\n\nElectric\nFlying",
-" 146      \n\nMoltres\n\nFire\nFlying",
+" 144      \n\n+Articuno\n\nIce\nFlying",
+" 145      \n\n+Zapdos\n\nElectric\nFlying",
+" 146      \n\n+Moltres\n\nFire\nFlying",
 " 147      \n\nDratini\n\nDragon\n",
 " 148      \n\nDragonair\n\nDragon\n",
 " 149      \n\nDragonite\n\nDragon\nFlying",
-" 150      \n\nMewtwo\n\nPsychic\n",
-" 151      \n\nMew\n\nPsychic\n",
+" 150      \n\n+Mewtwo\n\nPsychic\n",
+" 151      \n\n+Mew\n\nPsychic\n",
 " ?&0      \n\nMissingNo\n\n?????\n",
 " 152      \n\nChikorita\n\nGrass\n",
 " 153      \n\nBayleef\n\nGrass\n",
@@ -179,8 +183,93 @@ static char * poke_names[] = {
 " 165      \n\nLedyba\n\nBug\nFlying",
 " 166      \n\nLedian\n\nBug\nFlying",
 " 167      \n\nSpinarak\n\nBug\nPoison",
+" 168      \n\nAriados\n\nBug\nPoison",
+" 169      \n\nCrobat\n\nPoison\nFlying",
+" 170      \n\nChinchou\n\nWater\nEletric",
+" 171      \n\nLanturn\n\nWater\nElectric",
+" 172      \n\nPichu\n\nEletric\n",
+" 173      \n\nCleffa\n\nFairy\n",
+" 174      \n\nIgglybuff\n\nNormal\nFairy",
+" 175      \n\nTogepi\n\nFairy\n",
+" 176      \n\nTogetic\n\nFairy\nFlying",  
+" 177      \n\nNatu\n\nPsychic\nFlying",
+" 178      \n\nXatu\n\nPsychic\nFlying",
+" 179      \n\nMareep\n\nElectric\n",
+" 180      \n\nFlaaffy\n\nElectric\n", 
+" 181      \n\nAmpharos\n\nElectric\n",
+" 182      \n\nBellossom\n\nGrass\n",
+" 183      \n\nMarill\n\nWater\nFairy",  
+" 184      \n\nAzumarill\n\nWater\nFairy",
+" 185      \n\nSudowoodo\n\nRock\n", 
+" 186      \n\nPolitoed\n\nWater\n",
+" 187      \n\nHoppip\n\nGrass\nFlying",
+" 188      \n\nSkiploom\n\nGrass\nFlying",
+" 189      \n\nJumpluff\n\nGrass\nFlying",
+" 190      \n\nAipom\n\nNormal\n",
+" 191      \n\nSunkern\n\nGrass\n",
+" 192      \n\nSunflora\n\nGrass\n",
+" 193      \n\nYanma\n\nBug\nFlying",
+" 194      \n\nWooper\n\nWater\nGround",
+" 195      \n\nQuagsire\n\nWater\nGround",
+" 196      \n\nEspeon\n\nPsychic\n",
+" 197      \n\nUmbreon\n\nDark\n", 
+" 198      \n\nMurkrow\n\nDark\nFlying",
+" 199      \n\nSlowking\n\nWater\nPsychic",
+" 200      \n\nMisdreavus\n\nGhost\n", 
+" 201      \n\nUnknown\n\nPsychic\n", 
+" 202      \n\nWobbuffet\n\nPsychic\n",
+" 203      \n\nGirafarig\n\nNormal\nPsychic",
+" 204      \n\nPineco\n\nBug\n",
+" 205      \n\nForretress\n\nBug\nSteel",
+" 206      \n\nDunsparce\n\nNormal\n",
+" 207      \n\nGligar\n\nGround\nFlying",
+" 208      \n\nSteelix\n\nSteel\nGround",
+" 209      \n\nSnubbull\n\nFairy\n",
+" 210      \n\nGranbull\n\nFairy\n",
+" 211      \n\nQwilfish\n\nWater\nPoison",
+" 212      \n\nScizor\n\nBug\nSteel",
+" 213      \n\nShuckle\n\nBug\nRock",
+" 214      \n\nHeracross\n\nBug\nFighting",
+" 215      \n\nSneasel\n\nDark\nIce",
+" 216      \n\nTeddiursa\n\nNormal\n",
+" 217      \n\nUrsaring\n\nNormal\n",
+" 218      \n\nSlugma\n\nFire\n",
+" 219      \n\nMagcargo\n\nFire\nRock",
+" 220      \n\nSwinub\n\nIce\nGround",
+" 221      \n\nPiloswine\n\nIce\nGround",
+" 222      \n\nCorsola\n\nWater\nRock",
+" 223      \n\nRemoraid\n\nWater\n",
+" 224      \n\nOctillery\n\nWater\n",
+" 225      \n\nDelibird\n\nIce\nFlying",
+" 226      \n\nMantine\n\nWater\nFlying",
+" 227      \n\nSkarmory\n\nSteel\nFlying",
+" 228      \n\nHoundour\n\nDark\nFire",
+" 229      \n\nHoundoom\n\nDark\nFire",
+" 230      \n\nKingdra\n\nWater\nDragon",
+" 231      \n\nPhanpy\n\nGround\n",
+" 232      \n\nDonphan\n\nGround\n",
+" 233      \n\nPorygon2\n\nNormal\n",
+" 234      \n\nStantler\n\nNormal\n",
+" 235      \n\nSmeargle\n\nNormal\n",
+" 236      \n\nTyrogue\n\nFighting\n",
+" 237      \n\nHitmontop\n\nFighting\n",
+" 238      \n\nSmoochum\n\nIce\nPsychic",
+" 239      \n\nElekid\n\nElectric\n",
+" 240      \n\nMagby\n\nFire\n",
+" 241      \n\nMiltank\n\nNorml\n",
+" 242      \n\nBlissey\n\nNormal\n",
+" 243      \n\n+Raikou\n\nElectric\n",
+" 244      \n\n+Entei\n\nFire\n",
+" 245      \n\n+Suicune\n\nWater\n",
+" 246      \n\nLarvitar\n\nRock\nGround",
+" 247      \n\nPupitar\n\nRock\nGround",
+" 248      \n\nTyranitar\n\nRock\nDark",
+" 249      \n\n+Lugia\n\nPsychic\nFlying",
+" 250      \n\n+Ho-oh\n\nFire\nFlying",
+" 251      \n\n+Celebi\n\nPsychic\nGrass",
 NULL};
-
+//Pokemon States hight (M) Weight (kg)
+// \n\n<Name>\n\n<Hight>  m\n<Weight> kg
 static char * poke_info[] = {
 " 001      \n\nBulbasaur\n\n0.7  m\n6.9 kg",
 " 002      \n\nIvysaur\n\n1.0  m\n13.0 kg",
@@ -325,14 +414,14 @@ static char * poke_info[] = {
 " 141      \n\nKabutops\n\n1.3  m\n40.5 kg",
 " 142      \n\nAerodactyl\n\n1.8  m\n59.0 kg",
 " 143      \n\nSnorlax\n\n2.1  m\n460.0 kg",
-" 144      \n\nArticuno\n\n1.7  m\n55.4 kg",
-" 145      \n\nZapdos\n\n1.6  m\n52.6 kg",
-" 146      \n\nMoltres\n\n2.0  m\n60.0 kg",
+" 144      \n\n+Articuno\n\n1.7  m\n55.4 kg",
+" 145      \n\n+Zapdos\n\n1.6  m\n52.6 kg",
+" 146      \n\n+Moltres\n\n2.0  m\n60.0 kg",
 " 147      \n\nDratini\n\n1.8  m\n3.3 kg",
 " 148      \n\nDragonair\n\n4.0  m\n16.5 kg",
 " 149      \n\nDragonite\n\n2.2  m\n210.0 kg",
-" 150      \n\nMewtwo\n\n2.0  m\n122.0 kg",
-" 151      \n\nMew\n\n0.4  m\n4.0 kg",
+" 150      \n\n+Mewtwo\n\n2.0  m\n122.0 kg",
+" 151      \n\n+Mew\n\n0.4  m\n4.0 kg",
 " ?&0      \n\nMissingNo\n\n???  m\n??? kg",
 " 152      \n\nChikorita\n\n0.98  m\n6.4 kg",
 " 153      \n\nBayleef\n\n1.19  m\n15.8 kg",
@@ -350,178 +439,345 @@ static char * poke_info[] = {
 " 165      \n\nLedyba\n\n0.99  m\n10.8 kg",
 " 166      \n\nLedian\n\n1.40  m\n35.6 kg",
 " 167      \n\nSpinarak\n\n0.51  m\n8.5 kg",
+" 168      \n\nAriados\n\n1.09  m\n33.5 kg",
+" 169      \n\nCrobat\n\n1.80  m\n75.0 kg",
+" 170      \n\nChinchou\n\n0.51  m\n12.0 kg",
+" 171      \n\nLanturn\n\n1.19  m\n22.5 kg",
+" 172      \n\nPichu\n\n0.30  m\n2.0 kg",
+" 173      \n\nCleffa\n\n0.30  m\n3.0 kg",
+" 174      \n\nIgglybuff\n\n0.30  m\n1.0 kg",
+" 175      \n\nTogetic\n\n0.61  m\n3.2 kg",  
+" 176      \n\nTogepi\n\n0.30  m\n1.5 kg",
+" 177      \n\nTogetic\n\n0.61  m\n3.2 kg", 
+" 178      \n\nXatu\n\n1.50  m\n15.0 kg",
+" 179      \n\nMareep\n\n0.61  m\n7.8 kg",
+" 180      \n\nFlaaffy\n\n0.79  m\n13.3 kg",
+" 181      \n\nAmpharos\n\n1.40  m\n61.5 kg",
+" 182      \n\nBellossom\n\n0.41  m\n5.8 kg",
+" 183      \n\nMarill\n\n0.41  m\n8.5 kg",  
+" 184      \n\nAzumarill\n\n0.79  m\n28.5 kg",
+" 185      \n\nSudowoodo\n\n1.19  m\n38.0 kg",
+" 186      \n\nPolitoed\n\n1.09  m\n33.9 kg",
+" 187      \n\nHoppip\n\n0.41  m\n0.5 kg",
+" 188      \n\nSkiploom\n\n0.61  m\n1.0 kg",
+" 189      \n\nJumpluff\n\n0.79  m\n3.0 kg",
+" 190      \n\nAipom\n\n0.79  m\n11.5 kg",
+" 191      \n\nSunkern\n\n0.30  m\n1.8 kg",
+" 192      \n\nSunflora\n\n0.79  m\n8.5 kg",
+" 193      \n\nYanma\n\n1.19  m\n38.0 kg",
+" 194      \n\nWooper\n\n0.41  m\n8.5 kg",
+" 195      \n\nQuagsire\n\n1.40  m\n75.0 kg",
+" 196      \n\nEspeon\n\n0.89  m\n26.5 kg",
+" 197      \n\nUmbreon\n\n0.99  m\n27.0 kg",
+" 198      \n\nMurkrow\n\n0.51  m\n2.1 kg",
+" 199      \n\nSlowking\n\n2.01  m\n79.5 kg",
+" 200      \n\nMisdreavus\n\n0.71  m\n1.0 kg",
+" 201      \n\nUnknown\n\n0.51  m\n5.0 kg",
+" 202      \n\nWobbuffet\n\n1.30  m\n28.5 kg",
+" 203      \n\nGirafarig\n\n1.50  m\n41.5 kg",
+" 204      \n\nPineco\n\n0.61  m\n7.2 kg",
+" 205      \n\nForretress\n\n1.19  m\n125.8 kg", 
+" 206      \n\nDunsparce\n\n1.50  m\n14.0 kg",
+" 207      \n\nGligar\n\n1.09  m\n64.8 kg",
+" 208      \n\nSteelix\n\n9.19  m\n400.0 kg",
+" 209      \n\nSnubbull\n\n0.61  m\n7.8 kg",
+" 210      \n\nGranbull\n\n1.40  m\n48.7 kg",
+" 211      \n\nQwilfish\n\n0.51  m\n3.9 kg",
+" 212      \n\nScizor\n\n1.80  m\n118.0 kg",
+" 213      \n\nShuckle\n\n0.61  m\n20.5 kg",
+" 214      \n\nHeracross\n\n1.50  m\n54.0 kg",
+" 215      \n\nSneasel\n\n0.89  m\n28.0 kg",
+" 216      \n\nTeddiursa\n\n0.61  m\n8.8 kg",
+" 217      \n\nUrsaring\n\n1.80  m\n125.8 kg",
+" 218      \n\nSlugma\n\n0.71  m\n35.0 kg",
+" 219      \n\nMagcargo\n\n0.79  m\n55.0 kg",
+" 220      \n\nSwinub\n\n0.41  m\n6.5 kg",
+" 221      \n\nPiloswine\n\n1.09  m\n55.8 kg",
+" 222      \n\nCorsola\n\n0.61  m\n5.0 kg",
+" 223      \n\nRemoraid\n\n0.61  m\n12.0 kg",
+" 224      \n\nOctillery\n\n0.89  m\n28.5 kg",
+" 225      \n\nDelibird\n\n0.89  m\n16.0 kg",
+" 226      \n\nMantine\n\n2.11  m\n220.0 kg",
+" 227      \n\nSkarmory\n\n1.70  m\n50.5 kg",
+" 228      \n\nHoundour\n\n0.61  m\n10.8 kg",
+" 229      \n\nHoundoom\n\n1.40  m\n35.0 kg",
+" 230      \n\nKingdra\n\n1.80 m\n152.0 kg",
+" 231      \n\nPhanpy\n\n0.51  m\n33.5 kg",
+" 232      \n\nDonphan\n\n1.09  m\n120.0 kg",
+" 233      \n\nPorygon2\n\n0.61  m\n32.5 kg",
+" 234      \n\nStantler\n\n1.40  m\n71.2 kg",
+" 235      \n\nSmeargle\n\n1.19  m\n58.0 kg",
+" 236      \n\nTyrogue\n\n0.71  m\n21.0 kg",
+" 237      \n\nHitmontop\n\n1.40  m\n48.0 kg",
+" 238      \n\nSmoochum\n\n0.41  m\n6.0 kg",
+" 239      \n\nElekid\n\n0.61  m\n23.5 kg",
+" 240      \n\nMagby\n\n0.71  m\n21.4 kg",
+" 241      \n\nMiltank\n\n1.19  m\n75.5 kg",
+" 242      \n\nBlissey\n\n1.50  m\n46.8 kg",
+" 243      \n\n+Raikou\n\n1.91  m\n178.0 kg",
+" 244      \n\n+Entei\n\n2.11  m\n198.0 kg",
+" 245      \n\n+Suicune\n\n2.01  m\n187.0 kg",
+" 246      \n\nLarvitar\n\n0.61  m\n72.0 kg",
+" 247      \n\nPupitar\n\n1.19  m\n152.0 kg",
+" 248      \n\nTyranitar\n\n2.01  m\n202.0 kg",
+" 249      \n\n+Lugia\n\n5.21  m\n216.0 kg",
+" 250      \n\n+Ho-oh\n\n3.81  m\n199.0 kg",
+" 251      \n\n+Celebi\n\n0.61  m\n5.0 kg",
 NULL};
 
 
-
+//Pokemon Images
 static uint8_t poke_images[] = { \
-RESOURCE_ID_IMAGE_poke1,\
-RESOURCE_ID_IMAGE_poke2,\
-RESOURCE_ID_IMAGE_poke3,\
-RESOURCE_ID_IMAGE_poke4,\
-RESOURCE_ID_IMAGE_poke5,\
-RESOURCE_ID_IMAGE_poke6,\
-RESOURCE_ID_IMAGE_poke7,\
-RESOURCE_ID_IMAGE_poke8,\
-RESOURCE_ID_IMAGE_poke9,\
-RESOURCE_ID_IMAGE_poke10,\
-RESOURCE_ID_IMAGE_poke11,\
-RESOURCE_ID_IMAGE_poke12,\
-RESOURCE_ID_IMAGE_poke13,\
-RESOURCE_ID_IMAGE_poke14,\
-RESOURCE_ID_IMAGE_poke15,\
-RESOURCE_ID_IMAGE_poke16,\
-RESOURCE_ID_IMAGE_poke17,\
-RESOURCE_ID_IMAGE_poke18,\
-RESOURCE_ID_IMAGE_poke19,\
-RESOURCE_ID_IMAGE_poke20,\
-RESOURCE_ID_IMAGE_poke21,\
-RESOURCE_ID_IMAGE_poke22,\
-RESOURCE_ID_IMAGE_poke23,\
-RESOURCE_ID_IMAGE_poke24,\
-RESOURCE_ID_IMAGE_poke25,\
-RESOURCE_ID_IMAGE_poke26,\
-RESOURCE_ID_IMAGE_poke27,\
-RESOURCE_ID_IMAGE_poke28,\
-RESOURCE_ID_IMAGE_poke29,\
-RESOURCE_ID_IMAGE_poke30,\
-RESOURCE_ID_IMAGE_poke31,\
-RESOURCE_ID_IMAGE_poke32,\
-RESOURCE_ID_IMAGE_poke33,\
-RESOURCE_ID_IMAGE_poke34,\
-RESOURCE_ID_IMAGE_poke35,\
-RESOURCE_ID_IMAGE_poke36,\
-RESOURCE_ID_IMAGE_poke37,\
-RESOURCE_ID_IMAGE_poke38,\
-RESOURCE_ID_IMAGE_poke39,\
-RESOURCE_ID_IMAGE_poke40,\
-RESOURCE_ID_IMAGE_poke41,\
-RESOURCE_ID_IMAGE_poke42,\
-RESOURCE_ID_IMAGE_poke43,\
-RESOURCE_ID_IMAGE_poke44,\
-RESOURCE_ID_IMAGE_poke45,\
-RESOURCE_ID_IMAGE_poke46,\
-RESOURCE_ID_IMAGE_poke47,\
-RESOURCE_ID_IMAGE_poke48,\
-RESOURCE_ID_IMAGE_poke49,\
-RESOURCE_ID_IMAGE_poke50,\
-RESOURCE_ID_IMAGE_poke51,\
-RESOURCE_ID_IMAGE_poke52,\
-RESOURCE_ID_IMAGE_poke53,\
-RESOURCE_ID_IMAGE_poke54,\
-RESOURCE_ID_IMAGE_poke55,\
-RESOURCE_ID_IMAGE_poke56,\
-RESOURCE_ID_IMAGE_poke57,\
-RESOURCE_ID_IMAGE_poke58,\
-RESOURCE_ID_IMAGE_poke59,\
-RESOURCE_ID_IMAGE_poke60,\
-RESOURCE_ID_IMAGE_poke61,\
-RESOURCE_ID_IMAGE_poke62,\
-RESOURCE_ID_IMAGE_poke63,\
-RESOURCE_ID_IMAGE_poke64,\
-RESOURCE_ID_IMAGE_poke65,\
-RESOURCE_ID_IMAGE_poke66,\
-RESOURCE_ID_IMAGE_poke67,\
-RESOURCE_ID_IMAGE_poke68,\
-RESOURCE_ID_IMAGE_poke69,\
-RESOURCE_ID_IMAGE_poke70,\
-RESOURCE_ID_IMAGE_poke71,\
-RESOURCE_ID_IMAGE_poke72,\
-RESOURCE_ID_IMAGE_poke73,\
-RESOURCE_ID_IMAGE_poke74,\
-RESOURCE_ID_IMAGE_poke75,\
-RESOURCE_ID_IMAGE_poke76,\
-RESOURCE_ID_IMAGE_poke77,\
-RESOURCE_ID_IMAGE_poke78,\
-RESOURCE_ID_IMAGE_poke79,\
-RESOURCE_ID_IMAGE_poke80,\
-RESOURCE_ID_IMAGE_poke81,\
-RESOURCE_ID_IMAGE_poke82,\
-RESOURCE_ID_IMAGE_poke83,\
-RESOURCE_ID_IMAGE_poke84,\
-RESOURCE_ID_IMAGE_poke85,\
-RESOURCE_ID_IMAGE_poke86,\
-RESOURCE_ID_IMAGE_poke87,\
-RESOURCE_ID_IMAGE_poke88,\
-RESOURCE_ID_IMAGE_poke89,\
-RESOURCE_ID_IMAGE_poke90,\
-RESOURCE_ID_IMAGE_poke91,\
-RESOURCE_ID_IMAGE_poke92,\
-RESOURCE_ID_IMAGE_poke93,\
-RESOURCE_ID_IMAGE_poke94,\
-RESOURCE_ID_IMAGE_poke95,\
-RESOURCE_ID_IMAGE_poke96,\
-RESOURCE_ID_IMAGE_poke97,\
-RESOURCE_ID_IMAGE_poke98,\
-RESOURCE_ID_IMAGE_poke99,\
-RESOURCE_ID_IMAGE_poke100,\
-RESOURCE_ID_IMAGE_poke101,\
-RESOURCE_ID_IMAGE_poke102,\
-RESOURCE_ID_IMAGE_poke103,
-RESOURCE_ID_IMAGE_poke104,
-RESOURCE_ID_IMAGE_poke105,
-RESOURCE_ID_IMAGE_poke106,
-RESOURCE_ID_IMAGE_poke107,
-RESOURCE_ID_IMAGE_poke108,
-RESOURCE_ID_IMAGE_poke109,
-RESOURCE_ID_IMAGE_poke110,
-RESOURCE_ID_IMAGE_poke111,
-RESOURCE_ID_IMAGE_poke112,
-RESOURCE_ID_IMAGE_poke113,
-RESOURCE_ID_IMAGE_poke114,
-RESOURCE_ID_IMAGE_poke115,
-RESOURCE_ID_IMAGE_poke116,
-RESOURCE_ID_IMAGE_poke117,
-RESOURCE_ID_IMAGE_poke118,
-RESOURCE_ID_IMAGE_poke119,
-RESOURCE_ID_IMAGE_poke120,
-RESOURCE_ID_IMAGE_poke121,
-RESOURCE_ID_IMAGE_poke122,
-RESOURCE_ID_IMAGE_poke123,
-RESOURCE_ID_IMAGE_poke124,
-RESOURCE_ID_IMAGE_poke125,
-RESOURCE_ID_IMAGE_poke126,
-RESOURCE_ID_IMAGE_poke127,
-RESOURCE_ID_IMAGE_poke128,
-RESOURCE_ID_IMAGE_poke129,
-RESOURCE_ID_IMAGE_poke130,
-RESOURCE_ID_IMAGE_poke131,
-RESOURCE_ID_IMAGE_poke132,
-RESOURCE_ID_IMAGE_poke133,
-RESOURCE_ID_IMAGE_poke134,
-RESOURCE_ID_IMAGE_poke135,
-RESOURCE_ID_IMAGE_poke136,
-RESOURCE_ID_IMAGE_poke137,
-RESOURCE_ID_IMAGE_poke138,
-RESOURCE_ID_IMAGE_poke139,
-RESOURCE_ID_IMAGE_poke140,
-RESOURCE_ID_IMAGE_poke141,
-RESOURCE_ID_IMAGE_poke142,
-RESOURCE_ID_IMAGE_poke143,
-RESOURCE_ID_IMAGE_poke144,
-RESOURCE_ID_IMAGE_poke145,
-RESOURCE_ID_IMAGE_poke146,
-RESOURCE_ID_IMAGE_poke147,
-RESOURCE_ID_IMAGE_poke148,
-RESOURCE_ID_IMAGE_poke149,
-RESOURCE_ID_IMAGE_poke150,
-RESOURCE_ID_IMAGE_poke151,
-RESOURCE_ID_IMAGE_pokemissno,
-RESOURCE_ID_IMAGE_poke152,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
-RESOURCE_ID_IMAGE_UNKNOW,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen1,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2, 
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
+RESOURCE_ID_IMAGE_Gen2,
 };
